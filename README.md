@@ -1,5 +1,5 @@
 ### Foto do Card
 
-* Mobile
+* Descktop
 
-<img src="./public/projeto.jpg" alt="Foto do Projeto">
+<img src="./screens/projeto.jpg" alt="Foto do Projeto">
