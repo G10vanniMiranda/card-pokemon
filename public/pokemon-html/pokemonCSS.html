@@ -12,57 +12,132 @@
     <div class="container"> <!-- Pokemon 1 Bulbasaur -->
         <a href="#">
             <div class="card-box">
-                <div class="box-codigo flex justify-end">
-                    <div class="bg-slate-400 w-20 h-10 flex items-center justify-center rounded-bl-2xl opacity">
-                        <h1 class="text-black"> #001 </h1>
+                <div class="box-codigo-linha">
+                    <div class="box-codigo">
+                        <h1 class="codigo"> #001 </h1>
                     </div>
                 </div>
 
-                <div class="flex justify-center items-center">
+                <div class="box-image">
                     <Image src="../bulbasaur.png" alt="" width="200" height="200"
                         class="hover:scale-150 duration-300 cursor-pointer" />
                 </div>
 
-                <div id="tipos" class="h-14 flex justify-center items-center gap-4">
-                    <div class="bg-grass w-20 flex justify-center rounded-lg p-1">Glass</div>
-                    <div class="bg-poison w-20 flex justify-center rounded-lg p-1">Glass</div>
+                <div id="tipos" class="box-poder">
+                    <div class="poder bg-grass">Glass</div>
+                    <div class="poder bg-poison">Glass</div>
                 </div>
 
-                <div class="bg-green-600 h-22 flex justify-center items-center">
-                    <h1 class="font-semibold text-4xl border-b-2 cursor-pointer">Bulbasaur</h1>
+                <div class="box-name">
+                    <h1>Bulbasaur</h1>
                 </div>
-                <input type="text">
-                <input type="password">
             </div>
         </a>
     </div>
 
     <style>
         body {
-            background-color: black;
             color: white;
+            background-color: black;
 
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
         }
 
         /* input[type=text] { background-color: red; } */
 
         /* input[type=password] { background-color: green; } */
 
-
-
         .container {
             display: flex;
+            align-items: center;
             justify-content: center;
+
+            width: 100%;
+            height: 100vh;
         }
 
         .card-box {
             width: 384px;
             height: 384px;
             background-color: white;
+        }
+
+        .box-codigo-linha {
+            display: flex;
+            justify-content: end;
+        }
+
+        .box-codigo {
+            background-color: #4a5568;
+
+            width: 80px;
+            height: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            opacity: 0.8;
+            border-radius: 0 0 0 20px;
+        }
+
+        .codigo {
+            color: black;
+            font-size: 24px;
+        }
+
+        .box-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box-image Image {
+            cursor: pointer;
+            transition: duration 300ms;
+        }
+
+        .box-image Image:hover {
+            transform: scale(1.5);
+        }
+
+        .box-poder {
+            gap: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 16px;
+        }
+
+        .poder {
+            width: 80px;
+            height: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 8px;
+        }
+
+        .box-name {
+            background-color: green;
+
+            width: 100%;
+            height: 88px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box-name h1 {
+            color: white;
+            font-size: 36px;
+            border-bottom: 2px solid white;
         }
     </style>
 </body>
