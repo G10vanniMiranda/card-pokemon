@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./global.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon CSS</title>
+</head>
+
+<body>
+    <div class="container"> <!-- Pokemon 1 Bulbasaur -->
+        <a href="#">
+            <div class="card-box">
+                <div class="box-codigo flex justify-end">
+                    <div class="bg-slate-400 w-20 h-10 flex items-center justify-center rounded-bl-2xl opacity">
+                        <h1 class="text-black"> #001 </h1>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center">
+                    <Image src="../bulbasaur.png" alt="" width="200" height="200"
+                        class="hover:scale-150 duration-300 cursor-pointer" />
+                </div>
+
+                <div id="tipos" class="h-14 flex justify-center items-center gap-4">
+                    <div class="bg-grass w-20 flex justify-center rounded-lg p-1">Glass</div>
+                    <div class="bg-poison w-20 flex justify-center rounded-lg p-1">Glass</div>
+                </div>
+
+                <div class="bg-green-600 h-22 flex justify-center items-center">
+                    <h1 class="font-semibold text-4xl border-b-2 cursor-pointer">Bulbasaur</h1>
+                </div>
+                <input type="text">
+                <input type="password">
+            </div>
+        </a>
+    </div>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* input[type=text] { background-color: red; } */
+
+        /* input[type=password] { background-color: green; } */
+
+
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-box {
+            width: 384px;
+            height: 384px;
+            background-color: white;
+        }
+    </style>
+</body>
+
+
+
+</html>

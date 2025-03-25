@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+:root{
+    --primary-color: #f3f3f3;
+    --secondary-color: #333;
+    --danger-color: #ff0000;
+}
+
+button{
+    cursor: pointer;
+}
+
+.bg-grass {
+    background-color: #78C850;
+}
+
+.bg-fire {
+    background-color: rgb(227, 131, 20);
+}
+
+.bg-water {
+    background-color: aqua;
+}
+
+.bg-electric {
+    background-color: yellow;
+}
+
+.bg-poison {
+    background-color: purple;
+}
