@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="box-image">
-                    <Image src="../bulbasaur.png" alt="" width="200" height="200"
+                    <img src="../bulbasaur.png" alt="" width="200" height="200"
                         class="hover:scale-150 duration-300 cursor-pointer" />
                 </div>
 
@@ -49,6 +49,7 @@
         /* input[type=text] { background-color: red; } */
 
         /* input[type=password] { background-color: green; } */
+
 
         .container {
             display: flex;
@@ -95,12 +96,11 @@
             justify-content: center;
         }
 
-        .box-image Image {
-            cursor: pointer;
-            transition: duration 300ms;
+        .box-image img {
+            transition-duration: 300ms;
         }
 
-        .box-image Image:hover {
+        .box-image img:hover {
             transform: scale(1.5);
         }
 
