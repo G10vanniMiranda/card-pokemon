@@ -23,7 +23,7 @@ export default function Card(props: CardPokemonProps) {
     return (
         <div className="flex justify-center">
 
-            <div className="w-96 h-96 bg-white ">
+            <div className={`w-96 h-96 transition-all duration-300 shadow-lg ${isFavorite ? "bg-yellow-300" : "bg-white"}`}>
 
                 <div className="flex justify-between items-center">
                     <GiRoundStar size={40} className={isFavorite} />
